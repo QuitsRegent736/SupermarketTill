@@ -28,10 +28,7 @@ namespace SupermarketTill
             InitializeComponent(); 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -48,41 +45,28 @@ namespace SupermarketTill
 
         }
 
-       /* private void btnAdd_Click(object sender, RoutedEventArgs e)
-        {
-            EveryDayItems selectedEveryDayItems = DgEveryDayItems.SelectedItem as EveryDayItems;
-        }*/
-
-        private void lbxItemsBasket_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnRemove_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
 
-        private void tblkTotalCost_Loaded(object sender, RoutedEventArgs e)
-        {
 
-        }
+        /* private void btnAdd_Click(object sender, RoutedEventArgs e)
+         {
+             EveryDayItems selectedEveryDayItems = DgEveryDayItems.SelectedItem as EveryDayItems;
+         }*/
 
-        private void btn_Deli_Click(object sender, RoutedEventArgs e)
-        {
-            var query = from b in db.DeliFoods
-                        select b;
 
-            
 
-        }
 
-        private void btnScan_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
 
-        //This handles all my radio buttons 
+
+
+
+
 
 
 

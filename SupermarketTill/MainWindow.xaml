@@ -29,13 +29,13 @@
             <ColumnDefinition Width="105*"/>
             <ColumnDefinition Width="688*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnScan" Content="Scan" HorizontalAlignment="Left" Margin="36,363,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Background="#FFFFE832" Click="btnScan_Click"/>
-        <Button x:Name="btnRefund" Content="Refund" HorizontalAlignment="Left" Margin="395.667,363,0,0" VerticalAlignment="Top" Width="96" Click="btnRemove_Click" Grid.Column="1"/>
+        <Button x:Name="btnScan" Content="Scan" HorizontalAlignment="Left" Margin="36,363,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Background="#FFFFE832"/>
+        <Button x:Name="btnRefund" Content="Refund" HorizontalAlignment="Left" Margin="395.667,363,0,0" VerticalAlignment="Top" Width="96" Grid.Column="1"/>
         <Label x:Name="lblAllItems" Content="All Items" HorizontalAlignment="Left" Margin="105,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.339,0.701" Grid.ColumnSpan="2" Background="#FFFAE500"/>
         <Label x:Name="lblBasket" Content="Items Basket" Grid.Column="1" HorizontalAlignment="Left" Margin="461.667,70,0,0" VerticalAlignment="Top" Background="#FFFFEA00"/>
         <Label x:Name="SupermarketTill" Content="SuperMarket Till" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="103.667,11,0,0" FontSize="32" Foreground="#FF28A9D9" Background="#FFE5FF00" Grid.Column="1"/>
         <Label x:Name="lblTotalCost" Content="Total Cost:" Grid.Column="1" HorizontalAlignment="Left" Margin="233.667,262,0,0" VerticalAlignment="Top" Background="#FFFFE200"/>
-        <TextBlock x:Name="tblkTotalCost" Grid.Column="1" HorizontalAlignment="Left" Margin="665.667,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Loaded="tblkTotalCost_Loaded"/>
+       
         <Button
     Style="{StaticResource MaterialDesignRaisedAccentButton}"
     Width="100"
@@ -50,7 +50,6 @@
                 <DataGridCheckBoxColumn/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btn_Deli" Content="Deli" HorizontalAlignment="Left" Width="75" Click="btn_Deli_Click" Margin="612.667,0,0,388.667" Height="Auto" Grid.Column="1"/>
 
     </Grid>
 </Window>
