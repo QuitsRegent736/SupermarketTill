@@ -25,7 +25,7 @@ namespace SupermarketTill
 
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -36,7 +36,7 @@ namespace SupermarketTill
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var query = from a in db.EverydayItems
-                        select a;
+                        select a.Name;
 
             DgEveryDayItems.ItemsSource = query.ToList();
 
