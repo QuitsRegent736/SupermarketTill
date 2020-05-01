@@ -75,11 +75,17 @@
     <Compile Include="DeliFood.cs">
       <DependentUpon>Supermarket.tt</DependentUpon>
     </Compile>
+    <Compile Include="DeliFood.xaml.cs">
+      <DependentUpon>DeliFood.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EverydayItems.cs">
       <DependentUpon>Supermarket.tt</DependentUpon>
     </Compile>
     <Compile Include="OffLicense.cs">
       <DependentUpon>Supermarket.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OffLisence.xaml.cs">
+      <DependentUpon>OffLisence.xaml</DependentUpon>
     </Compile>
     <Compile Include="Supermarket.Context.cs">
       <AutoGen>True</AutoGen>
@@ -96,6 +102,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Supermarket.edmx</DependentUpon>
     </Compile>
+    <Compile Include="View Models\SearchFilter.cs" />
+    <Page Include="DeliFood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +119,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="OffLisence.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model1.Designer.cs">

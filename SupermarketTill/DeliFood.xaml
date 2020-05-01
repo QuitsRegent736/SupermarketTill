@@ -1,5 +1,5 @@
-﻿<Window x:Class="SupermarketTill.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window x:Class="SupermarketTill.DeliFood"
+               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          Background="{DynamicResource MaterialDesignPaper}"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -19,19 +19,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-
-        
-        
-
     </Window.Resources>
-    
-
-
-
-
-
-
-
 
 
 
@@ -40,9 +28,8 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="105*"/>
             <ColumnDefinition Width="688*"/>
-            
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnScan" Content="Scan" HorizontalAlignment="Left" Margin="36,363,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Background="#FFFFE832"/>
+        <Button x:Name="btnScan" Content="Scan" HorizontalAlignment="Left" Margin="36,363,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Background="#FFFFE832" Click="btnScan_Click"/>
         <Button x:Name="btnRefund" Content="Refund" HorizontalAlignment="Left" Margin="395.667,363,0,0" VerticalAlignment="Top" Width="96" Grid.Column="1" Click="btnRefund_Click"/>
         <Label x:Name="lblAllItems" Content="All Items" HorizontalAlignment="Left" Margin="105,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.339,0.701" Grid.ColumnSpan="2" Background="#FFFAE500"/>
         <Label x:Name="lblBasket" Content="Items Basket" Grid.Column="1" HorizontalAlignment="Left" Margin="461.667,70,0,0" VerticalAlignment="Top" Background="#FFFFEA00"/>
@@ -53,21 +40,19 @@
     Style="{StaticResource MaterialDesignRaisedAccentButton}"
     Width="100"
     Content="ACCENT" RenderTransformOrigin="0.553,2.375" Grid.Column="1" Margin="196.667,363,391.333,25.667" Click="Button_Click"/>
-        <DataGrid x:Name="DgEveryDayItems" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="227" Margin="36,119,0,0" VerticalAlignment="Top" Width="209" CanUserDeleteRows="False" CanUserAddRows="False">
+        <DataGrid x:Name="DgDeliFood" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="227" Margin="36,119,0,0" VerticalAlignment="Top" Width="209" CanUserDeleteRows="False" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn/>
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="dgEverydayItemsBasket" Grid.Column="1" HorizontalAlignment="Left" Height="227" Margin="395.667,119,0,0" VerticalAlignment="Top" Width="225" CanUserDeleteRows="False" CanUserAddRows="False">
+        <DataGrid x:Name="DgDeliFoodBasket" Grid.Column="1" HorizontalAlignment="Left" Height="227" Margin="395.667,119,0,0" VerticalAlignment="Top" Width="225" CanUserDeleteRows="False" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnDeliFood" Content="Deli" HorizontalAlignment="Left" Margin="532.667,0,0,0" VerticalAlignment="Top" Width="75" Background="#FFFFE832" Grid.Column="1" Click="btnDeliFood_Click"/>
-        <Button x:Name="btnOffLisence" Content="OffLis" HorizontalAlignment="Left" Margin="602.667,0,0,0" VerticalAlignment="Top" Width="75" Background="#FFFFE832" Grid.Column="1" Click="btnOffLisence_Click"/>
-        <Button x:Name="btnEveryDayItems" Content="Daily" HorizontalAlignment="Left" Margin="457.667,0,0,388.667" VerticalAlignment="Bottom" Width="75" Background="#FFFFE832" Grid.Column="1" RenderTransformOrigin="0.082,0.462"/>
-        <DatePicker x:Name="DatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="196.667,152,0,0" VerticalAlignment="Top" Width="132" Foreground="#DDFFAC00" Background="#FFFFDB30" FirstDayOfWeek="Monday" DisplayDate="2020-01-05" DisplayDateEnd="2021-10-01" DisplayDateStart="2020-01-04"/>
-
+        <Button x:Name="btnDeliFood" Content="Deli" HorizontalAlignment="Left" Margin="532.667,0,0,0" VerticalAlignment="Top" Width="75" Background="#FFFFE832" Grid.Column="1"/>
+        <Button x:Name="btnOffLisence" Content="OffLis" HorizontalAlignment="Left" Margin="602.667,0,0,388.667" VerticalAlignment="Bottom" Width="75" Background="#FFFFE832" Grid.Column="1" Click="btnOffLisence_Click"/>
+        <Button x:Name="btnEveryDayItems" Content="Daily" HorizontalAlignment="Left" Margin="457.667,0,0,0" VerticalAlignment="Top" Width="75" Background="#FFFFE832" Grid.Column="1" RenderTransformOrigin="0.082,0.462" Click="btnEveryDayItems_Click"/>
 
     </Grid>
 </Window>
